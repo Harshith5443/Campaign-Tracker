@@ -89,6 +89,11 @@ Endpoints:
 Request notes:
 - Add / Update / Delete endpoints require being logged in. The frontend uses cookie-based sessions and sends credentials with fetch calls.
 
+<img width="1417" height="736" alt="Screenshot 2025-10-12 222614" src="https://github.com/user-attachments/assets/3149380d-e0df-4692-b93c-01c35b01ace1" />
+<img width="1409" height="824" alt="Screenshot 2025-10-12 222600" src="https://github.com/user-attachments/assets/737ddd90-7625-41fa-a097-dad19141ee91" />
+
+
+
 
 
 
