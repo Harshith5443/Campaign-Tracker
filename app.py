@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify, render_template, send_from_directory,
 from flask_cors import CORS
 import json, os, time
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='.')
 CORS(app, supports_credentials=True)
 app.secret_key = "supersecretkey123" 
 
@@ -59,6 +59,10 @@ def logout():
     """Logout endpoint."""
     session.pop('username', None)
     return jsonify({'message': 'Logged out'})
+
+@app.route('/')
+def home():
+    return render_template('gin.html')
 
 @app.route('/api/check-login', methods=['GET'])
 def check_login():
